@@ -1,3 +1,9 @@
+/*todos los titulos*/
+.titulos {
+    text-align: center; 
+    text-decoration: underline;
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,7 +18,7 @@
     "footer footer footer";
 }
 
-/*aqui va el nombre*/
+/* Nombre*/
 #navbar{
     grid-area: header;
     background-color: blue; 
@@ -54,12 +60,9 @@
 #head-1{
     grid-area: head-1;
     background-color: gold;
-    display: flex; 
+    /*display: flex; */
     justify-content: center; 
     align-items: center;
-}
-/*todos los titulos*/
-.titulos {
     text-align: center; 
 }
 
@@ -80,7 +83,27 @@
 #foot-2{
     grid-area: foot-2;
     background-color: green;
+    
 }
+/* Estilos para los contenedores de hobbies */
+.hobbies-container {
+    display: flex; /* Utilizamos flexbox para mostrar los hobbies en línea */
+    justify-content: space-around; /* Distribuimos los hobbies uniformemente */
+}
+/* Estilos para cada hobby */
+.hobby {
+    display: flex; /* Utilizamos flexbox para mostrar el título y la imagen en línea */
+    flex-direction: column; /* Colocamos el título encima de la imagen */
+    align-items: center; /* Centramos horizontalmente el título y la imagen */
+}
+
+.hobby img {
+    width: 80px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-top: 10px; /* Espacio entre el título y la imagen */
+}
+
+
 /*link hacia su repositorio git del proyecto en publico*/
 #footer{
     grid-area: footer;
@@ -88,3 +111,7 @@
 }
 
 /**/
+
+
+
+
