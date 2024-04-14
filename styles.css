@@ -2,8 +2,10 @@
 .titulos {
     text-align: center; 
     text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
+/*container general*/
 #container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -18,7 +20,7 @@
     "footer footer footer";
 }
 
-/* Nombre*/
+/*aqui va el nombre*/
 #navbar{
     grid-area: header;
     background-color: blue; 
@@ -60,11 +62,11 @@
 #head-1{
     grid-area: head-1;
     background-color: gold;
-    /*display: flex; */
+    display: block; 
     justify-content: center; 
     align-items: center;
-    text-align: center; 
 }
+
 
 
 /*Seccion de estudios*/
@@ -83,18 +85,17 @@
 #foot-2{
     grid-area: foot-2;
     background-color: green;
-    
 }
-/* Estilos para los contenedores de hobbies */
 .hobbies-container {
-    display: flex; /* Utilizamos flexbox para mostrar los hobbies en línea */
-    justify-content: space-around; /* Distribuimos los hobbies uniformemente */
+    display: flex; /*flexbox para mostrar los hobbies en línea */
+    justify-content: space-around; /* Distribucion de hobbies uniformemente */
 }
+
 /* Estilos para cada hobby */
 .hobby {
-    display: flex; /* Utilizamos flexbox para mostrar el título y la imagen en línea */
-    flex-direction: column; /* Colocamos el título encima de la imagen */
-    align-items: center; /* Centramos horizontalmente el título y la imagen */
+    display: flex; /* para mostrar el título y la imagen en línea */
+    flex-direction: column; /* el título encima de la imagen */
+    align-items: center; /* Centrar horizontalmente el título y la imagen */
 }
 
 .hobby img {
@@ -104,6 +105,7 @@
 }
 
 
+
 /*link hacia su repositorio git del proyecto en publico*/
 #footer{
     grid-area: footer;
@@ -111,7 +113,3 @@
 }
 
 /**/
-
-
-
-
