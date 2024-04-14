@@ -1,0 +1,90 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "header header header"
+    "sidebar head-1 head-1"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar foot-1 foot-1"
+    "sidebar foot-2 foot-2"
+    "footer footer footer";
+}
+
+/*aqui va el nombre*/
+#navbar{
+    grid-area: header;
+    background-color: blue; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.nombre h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aplica una sombra al texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    padding: 10px; /* Añade padding para hacerlo más visible */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave del color del texto y la transformación */
+}
+.nombre h1:hover {
+    color: rgb(218, 211, 211); /* Cambia el color del texto cuando se pasa el mouse sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título al pasar el mouse sobre él */
+}
+
+
+
+
+/*barra lateral datos personales de contacto*/
+#sidebar{
+    grid-area: sidebar;
+    background-color: rgb(255, 0, 157);
+}
+#sidebar img {
+    max-width: 95%; /* Establece el ancho máximo*/
+    height: auto; /* altura se ajuste automáticamente mantiene proporcion */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+
+
+/*Seccion de Descripcion/Introduccion*/
+#head-1{
+    grid-area: head-1;
+    background-color: gold;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+/*todos los titulos*/
+.titulos {
+    text-align: center; 
+}
+
+
+/*Seccion de estudios*/
+#main{
+   grid-area: content; 
+   background-color: blueviolet;
+}
+
+/*Seccion de Experiencia previa*/
+#foot-1{
+    grid-area: foot-1;
+    background-color: rgb(128, 0, 43);
+}
+
+/*Seccion de Hobbies.*/
+#foot-2{
+    grid-area: foot-2;
+    background-color: green;
+}
+/*link hacia su repositorio git del proyecto en publico*/
+#footer{
+    grid-area: footer;
+    background-color: rgb(218, 208, 208);
+}
+
+/**/
