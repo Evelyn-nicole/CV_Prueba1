@@ -5,6 +5,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.iconos_lenguajes i {
+    font-size: 3em; 
+}
 /*container general*/
 #container {
     display: grid;
@@ -29,6 +32,7 @@
     align-items: center;
 }
 .nombre h1 {
+    font-size: 3em; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aplica una sombra al texto */
     font-weight: bold; /* Hace que el texto sea más grueso */
     padding: 10px; /* Añade padding para hacerlo más visible */
